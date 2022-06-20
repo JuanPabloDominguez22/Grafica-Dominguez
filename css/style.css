@@ -1,0 +1,380 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* MOBILE */
+
+/* HEADER */
+
+header {
+    background-color: #272727;
+    display: grid; 
+    grid-template-areas:
+    "logo"
+    "redes"
+    "menu";
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+.headerLogoImprenta {
+    display: flex;
+    justify-content: center;
+    grid-area: logo;
+    margin: 10px;
+
+}
+
+.headerLogos {
+    grid-area: redes;
+    margin: 15px;
+}
+
+.headerLogosRedes {
+    display: flex;
+    justify-content: center;
+}
+
+.generalNav {
+    grid-area: menu;
+}
+
+.generalLogos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+}
+
+header .headerLogos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-content: center;
+    justify-content: end;
+}
+
+.generalNav{
+    display: grid;
+    align-content: center;
+}
+
+.barraNav {
+    display: grid;
+    margin: 15px;
+}
+
+.barraNav .headerNav{
+    display: grid;
+    justify-self: center;
+}
+
+a{
+    display: inline;
+    color: #ffffff;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'M PLUS 1 Code', sans-serif;
+    text-shadow: 0px 0px 23px rgba(255,255,255,1);
+    font-size: x-large;
+}
+
+main {
+    background-color: #f5d182;
+}
+
+/* INDEX */
+
+.mainIndex {
+    display: grid;
+    grid-template-areas:
+    "titulo"
+    "promo1"
+    "promo2"
+    "cv";
+}
+
+.titulos {
+    grid-area: titulo;
+    display: flex;
+    justify-self: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 10px;
+    text-align: center;
+    
+}
+
+.promo1 {
+    display: flex;
+    justify-self: center;
+    grid-area: promo1;
+    width: 300px;
+    margin: 10px;
+}
+
+.cv {
+    display: flex;
+    justify-self: center;
+    grid-area: cv;
+    width: 300px;
+    margin: 10px;
+}
+
+.promo2 {
+    display: flex;
+    justify-self: center;
+    grid-area: promo2;
+    width: 300px;
+    margin: 10px;
+}
+
+
+
+/* FOOTER */
+
+footer {
+    display: grid;
+    grid-template-areas:
+    "links"
+    "logo"
+    "texto";
+    background-color: #272727;
+}
+
+.linksFooter {
+    grid-area: links;
+    list-style: none;
+    text-align: center;
+}
+
+.footerLink {
+    margin: 15px;
+}
+
+#imagenFooter {
+    grid-area: logo;
+    display: flex;
+    justify-self: center;
+    width: 200px;
+    margin: 10px;
+}
+
+.footerTextoDos {
+    grid-area: texto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    color: #ffffff;
+    margin: 10px;
+}
+
+.mainGaleria {
+    display: grid;
+    justify-content: center;
+    grid-template-areas:
+    "titulo"
+    "imagenes";
+}
+
+.titulosGaleria {
+    grid-area: titulo;
+    margin: 15px;
+    display: flex;
+    justify-self: center;
+    text-align: center;
+}
+
+.fotosGaleria {
+    grid-area: imagenes;
+    display: grid;
+    justify-items: center;
+}
+
+.imagenGaleria {
+    margin: 15px;
+}
+
+
+
+
+
+
+
+
+
+/* DESKTOP */
+
+@media screen and (min-width: 768px) {
+
+/* HEADER */
+
+/* UBICACIONES */
+
+.headerLogosRedes {
+    align-self: center;
+
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+header {
+    background-color: #272727;
+    display: grid; 
+    grid-template-areas:
+    "logo . redes"
+    "logo menu menu";
+}
+
+.headerLogoImprenta {
+    grid-area: logo;
+}
+
+.headerLogos {
+    grid-area: redes;
+}
+
+.generalNav {
+    grid-area: menu;
+}
+
+.generalLogos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+}
+
+header .headerLogos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-content: center;
+    justify-content: end;
+}
+
+/* BARRA DE NAVEGACION */
+
+.generalNav{
+    display: grid;
+    align-content: center;
+}
+
+.barraNav {
+    display: grid;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    color: #ffffff;
+}
+
+.barraNav .headerNav{
+    display: grid;
+    justify-self: center;
+}
+
+main {
+    background-color: #f5d182;
+}
+
+/* INDEX */
+
+.mainIndex {
+    background-color: #f5d182;
+    display: grid;
+    grid-template-areas:
+    "titulo titulo titulo"
+    "promo1 cv promo2";
+    padding: 10px;
+}
+
+.titulos {
+    grid-area: titulo;
+    justify-content: center;
+}
+
+.promo1 {
+    grid-area: promo1;
+    width: 25rem;
+}
+
+.cv {
+    grid-area: cv;
+    width: 25rem;
+}
+
+.promo2 {
+    grid-area: promo2;
+    width: 25rem;
+}
+
+/* TITULO */
+
+.titulos{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 65px;
+    display: flex;
+    justify-content: center;
+}
+
+/* GALERIA */
+
+.mainGaleria {
+    background-color: #f5d182;
+}
+.fotosGaleria{
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    grid-template-rows: minmax(300px, auto);
+    justify-items: center;
+}
+
+a{
+    display: inline;
+    color: #ffffff;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'M PLUS 1 Code', sans-serif;
+    text-shadow: 0px 0px 23px rgba(255,255,255,1);
+    font-size: x-large;
+}
+
+/* NOSOTROS */
+
+
+
+/* FOOTER */
+
+footer {
+    display: grid;
+    grid-template-areas:
+    "links links logo texto";
+    background-color: #272727;
+}
+
+.linksFooter {
+    grid-area: links;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    list-style: none;
+}
+
+.imagenFooter {
+    grid-area: logo;
+}
+
+.footerTextoDos {
+    grid-area: texto;
+    display: flex;
+    flex-direction: row-reverse;
+    color: #ffffff;
+    align-self: center;
+}
+
+}
+
+

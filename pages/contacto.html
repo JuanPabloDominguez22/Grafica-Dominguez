@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Grafic Express Comunicación Visual</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@700&display=swap');
+    </style>
+</head>
+<body>
+    <!--Header general-->
+    <header>
+        <a href="index.html" class="headerLogoImprenta"> <img src="../assets/Logo cabecera.jpeg" title="Logo de la imprenta" alt="Logo de cabecera" width="200px"></a>
+            <!--Logos de redes-->
+        <div class="headerLogos">
+            <a class="headerLogosRedes" href="https://wa.me/+549224115440772?text=Hola%20queria%20hacer%20una%20consulta" target="_blank"> <img src="../assets/whatsapp-icone-2.png" title="Click para ir a nuestro Whatsapp" alt="Logo Whatsapp" width="45px"></a>
+            <a class="headerLogosRedes" href="https://facebook.com/graficexpress.chascomus" target="_blank"> <img src="../assets/facebok-logo7.png" title="Click para ir a nuestro Facebook" alt="Logo Facebook" width="50px"></a>
+            <a class="headerLogosRedes" href="https://instagram.com/graficexpressok/" target="_blank"> <img src="../assets/instagram-logo6.png" title="Click para ir a nuestro Instagram" alt="Logo instagram" width="50px" target="_blank"></a>
+        </div>
+            <!--Barra de navegacion superior-->
+        <nav class="generalNav">
+            <ul class="barraNav">
+                <li class="headerNav">
+                    <a href="../index.html">Inicio</a>
+                </li>
+                <li class="headerNav">
+                    <a href="nosotros.html">Nosotros</a>
+                </li>
+                <li class="headerNav">
+                    <a href="donde-estamos.html">Donde Estamos</a>
+                </li>
+                <li class="headerNav">
+                    <a href="Galeria.html">Galería</a>
+                </li>
+                <li class="headerNav">
+                   <a href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!--Detalle del contacto-->
+        <h1 class="titulos">Contactate con nosotros</h1>
+        <p>Ponerte en contacto con nosotros es fácil! Tenemos varios metodos de contacto, elegi el mas cómodo para vos! Hace click en el logo de Whatsapp para ir directo a nuestro chat, o agendanos al 2241-440772 y llamanos!</p>
+        <!--Logos de las redes-->
+    <a href="https://whatsapp.com" target="_blank"> <img src="../assets/whatsapp-icone-2.png" alt="Logo Whatsapp" width="180px" title="Click para ir a nuestro Whatsapp"></a>
+    <a href="https://facebook.com/graficexpress.chascomus" target="_blank"> <img src="../assets/facebok-logo7.png" alt="Logo Facebook" width="200px"title="Click para ir a nuestro Facebook"></a>
+    <a href="https://instagram.com/graficexpressok/" target="_blank"> <img src="../assets/instagram-logo6.png" alt="Logo instagram" width="200px" target="_blank" title="Click para ir a nuestro Instagram"></a>
+    <div>
+        <p>También tenemos Facebook e Instagram, donde no solo podes contactarnos, sino que también podes ver nuestra galería, promociones y novedades!</p>
+        <br>
+        <p>Envianos tu consulta, indicando nombre, mail y teléfono y a la brevedad estaremos atendiendo tu pedido! Si sos diseñador y buscas servicio de impresión, no olvides aclarar “Soy Diseñador” para acceder a promociones y descuentos al gremio.</p>
+    </div>
+    <!--Formulario de contacto-->
+    <form>
+        <input type="text" id="nombre" placeholder="Nombre y Apellido">
+        <br>
+        <input type="email" id="email" placeholder="Dirección de e-mail">
+        <br>
+        <input type="tel" id="telefono" placeholder="Teléfono de contacto">
+        <br>
+        <!--Boton de check-->
+        <label for="diseñador"> Soy un diseñador!</label>
+        <input type="checkbox" name="Botoncito" id="diseñador">
+        <br>
+        <label for="Adjuntar-archivo">Adjuntar Archivo</label>
+        <input type="button" value="Buscar">
+        <br>
+        <label for="mensaje"></label>
+        <textarea id="mensaje" cols="50" rows="10" placeholder="Escribinos tu consulta y nos pondremos en contacto a la brevedad"></textarea>
+        <br>
+        <!--Botones de submit y reset-->
+        <input type="submit">
+        <input type="reset">
+    </form>
+</main>
+    <!--Comienzo del footer-->
+    <footer>
+        <!--Barra de enlaces inferior-->
+        <ul class="linksFooter">
+            <li class="footerLink">
+                <a class="footerTexto" href="acerca-de.html">Acerca de</a>
+            </li>
+            <li class="footerLink">
+                <a class="footerTexto" href="rrhh.html">RRHH</a>
+            </li>
+            <li class="footerLink">
+                <a class="footerTexto" href="aviso-de-privacidad.html">Aviso de privacidad</a>
+            </li>
+            <li class="footerLink">
+                <a class="footerTexto" href="contacto.html">Contacto</a>
+            </li>
+        </ul>
+        <!--Imagen del footer-->
+        <img src="../assets/Logo cabecera.jpeg" id="imagenFooter" alt="Logo del footer" title="Logo del footer" width="100px">
+        <!--Texto informativo-->
+        <h4 class="footerTextoDos" >Grafic Express Comunicación Visual © - Chascomús - Argentina</h4>
+    </footer>
+</body>
+</html>
