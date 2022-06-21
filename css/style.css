@@ -82,7 +82,7 @@ a{
 }
 
 main {
-    background-color: #f5d182;
+    background-image: linear-gradient(#f5d182, white)
 }
 
 /* INDEX */
@@ -208,7 +208,10 @@ footer {
 
 .headerLogosRedes {
     align-self: center;
+}
 
+a:hover {
+    color: orangered;
 }
 
 body {
@@ -269,7 +272,7 @@ header .headerLogos{
 }
 
 main {
-    background-color: #f5d182;
+    background-image: linear-gradient(#f5d182, white)
 }
 
 /* INDEX */
@@ -315,7 +318,7 @@ main {
 /* GALERIA */
 
 .mainGaleria {
-    background-color: #f5d182;
+    background-image: linear-gradient(#f5d182, white);
 }
 .fotosGaleria{
     padding: 15px;
