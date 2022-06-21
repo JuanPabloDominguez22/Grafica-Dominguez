@@ -286,10 +286,6 @@ main {
     padding: 10px;
 }
 
-.titulos {
-    grid-area: titulo;
-    justify-content: center;
-}
 
 .promo1 {
     grid-area: promo1;
@@ -313,13 +309,26 @@ main {
     font-size: 65px;
     display: flex;
     justify-content: center;
+    grid-area: titulo;
 }
 
 /* GALERIA */
 
 .mainGaleria {
     background-image: linear-gradient(#f5d182, white);
+    font-size: 35px;
 }
+
+.imagenGaleria {
+    transition: transform 1s;
+}
+
+.imagenGaleria:hover{
+    -webkit-transform:scale(1.3);
+    transform:scale(1.3);
+}
+
+
 .fotosGaleria{
     padding: 15px;
     display: grid;
@@ -327,6 +336,10 @@ main {
     gap: 15px;
     grid-template-rows: minmax(300px, auto);
     justify-items: center;
+}
+
+.titulosGaleria {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 a{
