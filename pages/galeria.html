@@ -10,6 +10,8 @@
         @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@700&display=swap');
     </style>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body>
     <!--Header general-->
@@ -43,16 +45,58 @@
         </nav>
     </header>
     <!--Inicio del cuerpo + imagenes-->
-    <main class="mainGaleria">
-        <h1 class="titulosGaleria">Galería de fotos</h1>
-        <div class="fotosGaleria">
-            <img class="imagenGaleria" src="../assets/Fotos Galeria/Calcos Seguridad.jpeg" alt="Calcos de Seguridad" width="300px" title="Calcos de Vinilo Impreso">
-            <img class="imagenGaleria" src="../assets/Fotos Galeria/Cartel Corporeo.jpeg" alt="Cartel corporeo" width="400px" title="Cartel corporeo">
-            <img class="imagenGaleria" src="../assets/Fotos Galeria/Cartel de ruta.jpeg" alt="Cartel de ruta" width="400px" title="Cartel de ruta">
-            <img class="imagenGaleria" src="../assets/Fotos Galeria/Esmerilado.jpeg" alt="Esmerilado" width="400px" title="Ploteo en esmerilado">
-            <img class="imagenGaleria" src="../assets/Fotos Galeria/Tanque moto.jpeg" alt="Tanque de moto" width="400px" title="Ploteo de moto">
-            <img class="imagenGaleria" src="../assets/Fotos Galeria/Vinilo Pared.jpeg" alt="Ploteo de pared" width="300px" title="Ploteo de pareds">
-        </div>
+    <main>
+        <!--TITULO-->
+        <h1 class="text-center pt-3 h1">Galería de fotos</h1>
+        <!--CARDS CON FOTOS-->
+        <article class="container-fluid">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 0"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../assets/Fotos Galeria/Calcos Seguridad.jpeg" class="d-block w-100" alt="Calcos de seguridad">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Calcos de Seguridad</h5>
+                      <p>Calcos para suelos, impreso en vinilo 3M</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/Fotos Galeria/Cartel Corporeo.jpeg" class="d-block w-100" alt="Cartel corporeo">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Cartel Corporeo</h5>
+                      <p>Cartel de letras corporeas colocadas sobre chapa pintada</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/Fotos Galeria/Cartel de ruta.jpeg" class="d-block w-100" alt="Cartel de ruta">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Cartel de ruta</h5>
+                      <p>Cartel de ruta realizado en vinilo impreso</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/Fotos Galeria/Esmerilado.jpeg" class="d-block w-100" alt="Vidriera Esmerilada">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Vidriera Esmerilada</h5>
+                      <p>Ploteo de vidriera con vinilo esmerilado</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </article>
     </main>
     <!--Comienzo del footer-->
     <footer>
@@ -76,5 +120,7 @@
         <!--Texto informativo-->
         <h4 class="footerTextoDos" >Grafic Express Comunicación Visual © - Chascomús - Argentina</h4>
     </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
