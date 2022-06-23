@@ -275,7 +275,7 @@ main {
 /* INDEX */
 
 .mainIndex {
-    background-color: #f5d182;
+    background-image: linear-gradient(#f5d182, white);
     display: grid;
     grid-template-areas:
     "titulo titulo titulo"
@@ -315,7 +315,7 @@ main {
 /* GALERIA */
 
 .mainGaleria {
-    background-color: #f5d182;
+    background-image: linear-gradient(#f5d182, white);
 }
 .fotosGaleria{
     padding: 15px;
@@ -332,8 +332,7 @@ a{
     list-style: none;
     text-decoration: none;
     font-family: 'M PLUS 1 Code', sans-serif;
-    text-shadow: 0px 0px 23px rgba(255,255,255,1);
-    font-size: x-large;
+
 }
 
 /* NOSOTROS */
