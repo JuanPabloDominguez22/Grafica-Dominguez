@@ -196,6 +196,11 @@ footer {
     margin: 15px;
 }
 
+.centrador {
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+}
 
 
 /* DESKTOP */
@@ -303,6 +308,10 @@ main {
     width: 25rem;
 }
 
+.card-group {
+    padding: 25px;
+}
+
 /* TITULO */
 
 .titulos{
@@ -335,9 +344,11 @@ a{
 
 }
 
-/* NOSOTROS */
-
-
+.centrador {
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+}
 
 /* FOOTER */
 
@@ -367,6 +378,7 @@ footer {
     color: #ffffff;
     align-self: center;
 }
+
 
 }
 
