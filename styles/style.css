@@ -226,7 +226,7 @@ header {
     display: grid; 
     grid-template-areas:
     "logo . redes"
-    "logo menu menu";
+    ".  menu menu";
 }
 
 .headerLogoImprenta {

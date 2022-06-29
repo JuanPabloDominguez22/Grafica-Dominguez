@@ -1,0 +1,80 @@
+/* HEADER */
+header {
+  background-color: #272727;
+  display: grid;
+  grid-template-areas: "logo logo . redes" "logo logo menu menu ";
+}
+header .headerLogoImprenta {
+  grid-area: logo;
+}
+header .headerLogos {
+  grid-area: redes;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 15px;
+}
+header .generalNav {
+  grid-area: menu;
+}
+header .generalNav .barraNav {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+header .generalNav .barraNav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: x-large;
+}
+header .generalNav .barraNav a:hover {
+  color: orangered;
+}
+
+/* MAIN ACERCA DE */
+.mainAcerca {
+  background-image: linear-gradient(#f5d182, white);
+  display: flex;
+  justify-content: center;
+}
+.mainAcerca .textoAcerca {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-style: italic;
+  padding: 25px;
+  text-align: center;
+  font-size: large;
+}
+
+/* FOOTER */
+footer {
+  background-color: #272727;
+  display: grid;
+  grid-template-areas: "links links logo info info";
+  justify-content: space-around;
+  align-items: center;
+}
+footer .linksFooter {
+  grid-area: links;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+footer .linksFooter a {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: medium;
+}
+footer .linksFooter a:hover {
+  color: orangered;
+}
+footer .imgFooter {
+  grid-area: logo;
+  width: 150px;
+}
+footer .footerTextoDos {
+  grid-area: info;
+  color: #ffffff;
+}
+
+/*# sourceMappingURL=estiloscss.css.map */
